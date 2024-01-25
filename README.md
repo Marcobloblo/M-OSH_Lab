@@ -46,6 +46,6 @@ As far as the sensor is concerned, operation is relatively straightforward. Depe
 In addition to the amplifier, we had to install 3 filters with different cut-off frequencies. Each filter has a purpose, to make the signal cleaner and more usable.
 Thanks to all this circuitry, depending on the output voltage, we can deduce a different resistance value, which we code on 10 bits (2^10 values, i.e. 1024).
 
-![Description du routage PCB](img/routage_pcb.png)
+![Description du routage PCB](img/routage_pcb.JPG)
 # Conclusion
 At the end of this project, we were able to grasp all the concepts associated with an IoT system, from the physical part to the creation of the sensor, from the electronic part with the soldering and routing of the PCB and the creation of the electronic model on KiCad, to the communication and protocol part with the configuration via Arduino of the LoRa module.
