@@ -1,4 +1,4 @@
-#Main objective
+# Main Objectiv
 Through the Microcontroller & Open-Source Hardware UF, we aim to understand how an IoT system works from all points of view.
 
 This UF was organized around several points:
@@ -8,7 +8,7 @@ Thirdly, we learned how to solder an electronic board with tin and pins to make 
 We then worked on an IoT/network part with software (Node Red), to enable communication between our system and a cloud database.
 Finally, we designed the final electronic board on KiCad that could do everything we need to make a system that should detect a gas while sending the information to a cloud.
 
-#Github content:
+# Github content:
 On this repository you can find: 
 - The Kicad project file with the electronic schematic and the routed PCB
 - The Arduino code for our sensor
@@ -16,7 +16,7 @@ On this repository you can find:
 - The amplifier code on LTSpice
 - The README file (you're reading it now 😊 )
 
-#Materials used in this project :
+# Materials used in this project :
 To carry out this project, we need :
 - An Arduino UNO microcontroller, which will do all the calculations and into which we'll integrate our code.
 - A LoRa module to transmit the data collected by the sensor
