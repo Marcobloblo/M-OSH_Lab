@@ -1,4 +1,4 @@
-# Main Objectiv
+# Main Objective
 Through the Microcontroller & Open-Source Hardware UF, we aim to understand how an IoT system works from all points of view.
 
 This UF was organized around several points:
