@@ -1,0 +1,139 @@
+[
+    {
+        "id": "efdafe83fac2b0b4",
+        "type": "tab",
+        "label": "Flux 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f426e69bd5e6f87a",
+        "type": "mqtt in",
+        "z": "efdafe83fac2b0b4",
+        "name": "",
+        "topic": "application/d279c0ef-4264-4426-b2bf-54e7f2349669/#",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "cae0a17bbf004adc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 320,
+        "y": 100,
+        "wires": [
+            [
+                "a499e73ad33b71be"
+            ]
+        ]
+    },
+    {
+        "id": "d690e73e658c49fc",
+        "type": "ui_text",
+        "z": "efdafe83fac2b0b4",
+        "group": "715e00dc3e6cf5a8",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Val brute capteur",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 690,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "a499e73ad33b71be",
+        "type": "function",
+        "z": "efdafe83fac2b0b4",
+        "name": "function 1",
+        "func": "let buff = new  Buffer(msg.payload.data,'base64');\nlet text = buff.toString('ascii');\nlet val = text.charCodeAt(text);\n\nreturn {\"payload\":val};",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 220,
+        "wires": [
+            [
+                "d690e73e658c49fc",
+                "56d73d9f541b9bee"
+            ]
+        ]
+    },
+    {
+        "id": "56d73d9f541b9bee",
+        "type": "debug",
+        "z": "efdafe83fac2b0b4",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "cae0a17bbf004adc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://10.10.40.100",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "715e00dc3e6cf5a8",
+        "type": "ui_group",
+        "name": "Default",
+        "tab": "a2bd9bbe9803742a",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a2bd9bbe9803742a",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
