@@ -27,7 +27,7 @@ Once assembled, the project looks like this:
 The Arduino code that makes it all work can be found in the git repository!
 Here's the Node Red that receives the data and displays it on a web-accessible dashboard:
 
-!(img/NodeRED.png)
+![Description de Node Red](img/NodeRED.png)
 
 # Kicad/Gaz Sensor part
 The aim of this part is to create an intelligent sensor capable of detecting the presence of gas.
