@@ -29,7 +29,7 @@ Here's the Node Red that receives the data and displays it on a web-accessible d
 
 !(img/NodeRED.png)
 
-#Kicad/Gaz Sensor part
+# Kicad/Gaz Sensor part
 The aim of this part is to create an intelligent sensor capable of detecting the presence of gas.
 
 KiCad IMAGE
@@ -44,5 +44,5 @@ Thanks to all this circuitry, depending on the output voltage, we can deduce a d
 
 PCB IMAGE
 
-#Conclusion
+# Conclusion
 At the end of this project, we were able to grasp all the concepts associated with an IoT system, from the physical part to the creation of the sensor, from the electronic part with the soldering and routing of the PCB and the creation of the electronic model on KiCad, to the communication and protocol part with the configuration via Arduino of the LoRa module.
