@@ -24,25 +24,28 @@ To carry out this project, we need :
 
 Once assembled, the project looks like this:
 
+![Description montage](img/MOSH.png)
+
 The Arduino code that makes it all work can be found in the git repository!
 Here's the Node Red that receives the data and displays it on a web-accessible dashboard:
 
-!(img/N)
+![Description de Node Red](img/NodeRED.png)
 
-#Kicad/Gaz Sensor part
+# Kicad/Gaz Sensor part
 The aim of this part is to create an intelligent sensor capable of detecting the presence of gas.
 
-KiCad IMAGE
+![Description du montage KiCad](img/KiCad.JPG)
 
 As far as the sensor is concerned, operation is relatively straightforward. Depending on whether a gas is present or not, and on the gas itself, the resistance of the sensor in the electronic circuit will vary. To be able to determine this, we need to amplify the output voltage to be able to measure it and do post-measurement processing.
 In addition to the amplifier, we had to install 3 filters with different cut-off frequencies. Each filter has a purpose, to make the signal cleaner and more usable.
 Thanks to all this circuitry, depending on the output voltage, we can deduce a different resistance value, which we code on 10 bits (2^10 values, i.e. 1024).
 
+![Description du capteur AIME](img/Capteur_AIME.JPG)
+
 As far as the sensor is concerned, operation is relatively straightforward. Depending on whether a gas is present or not, and on the gas itself, the resistance of the sensor in the electronic circuit will vary. In order to determine this, we need to amplify the output voltage for measurement and post-measurement processing.
 In addition to the amplifier, we had to install 3 filters with different cut-off frequencies. Each filter has a purpose, to make the signal cleaner and more usable.
 Thanks to all this circuitry, depending on the output voltage, we can deduce a different resistance value, which we code on 10 bits (2^10 values, i.e. 1024).
 
-PCB IMAGE
-
-#Conclusion
+![Description du routage PCB](img/routage_pcb.JPG)
+# Conclusion
 At the end of this project, we were able to grasp all the concepts associated with an IoT system, from the physical part to the creation of the sensor, from the electronic part with the soldering and routing of the PCB and the creation of the electronic model on KiCad, to the communication and protocol part with the configuration via Arduino of the LoRa module.
